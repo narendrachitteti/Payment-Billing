@@ -133,7 +133,7 @@ handleCalculateTotal() {
     this.handleCalculateTotal();
 
     try {
-      const response = await axios.post('http://localhost:3001/invoice', {
+      const response = await axios.post('https://payment-database.vercel.app/invoice', {
         currentDate: this.state.currentDate,
         invoiceNumber: this.state.invoiceNumber,
         customerName: this.state.customerName,
